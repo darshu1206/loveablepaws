@@ -489,48 +489,8 @@
             }
         }
 
-        function updateAgeOptions() {
-            var petType = document.querySelector('input[name="petType"]:checked').value;
-            var ageSelect = document.getElementById('age');
-
-            // Clear existing options
-            ageSelect.innerHTML = '';
-
-            // Add new options based on the selected pet type
-            if (petType === 'dog') {
-                var dogAgeOptions = ['Puppyhood', 'Adolescence', 'Adulthood', 'Senior'];
-                for (var i = 0; i < dogAgeOptions.length; i++) {
-                    var option = document.createElement('option');
-                    option.value = dogAgeOptions[i].toLowerCase().replace(/\s+/g, '');
-                    option.text = dogAgeOptions[i];
-                    ageSelect.add(option);
-                }
-            } else if (petType === 'cat') {
-                var catAgeOptions = ['Kittenhood', 'Adolescence', 'Adulthood', 'Senior'];
-                for (var j = 0; j < catAgeOptions.length; j++) {
-                    var optionCat = document.createElement('option');
-                    optionCat.value = catAgeOptions[j].toLowerCase().replace(/\s+/g, '');
-                    optionCat.text = catAgeOptions[j];
-                    ageSelect.add(optionCat);
-                }
-            }
-        }
-
-        // Call the function when the pet type radio selection changes
-        document.addEventListener('DOMContentLoaded', function () {
-            // Call on page load
-            updateAgeOptions();
-
-            // Add event listener to the pet type radio group
-            var petTypeRadios = document.querySelectorAll('input[name="petType"]');
-            petTypeRadios.forEach(function (radio) {
-                radio.addEventListener('change', updateAgeOptions);
-            });
-        });
-
         function combine() {
             updateBreeds();
-            //updateAgeOptions(); 
         }
 
     </script>
