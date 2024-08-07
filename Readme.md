@@ -7,6 +7,11 @@ This platform offers a range of innovative features to facilitate the adoption p
 
 The adoption process on the platform involves user registration, where pet owners, adopters, and shelters create profiles.
 
+You can explore the platform using this ![live link](https://loveablepaws.vercel.app) with the following demo credentials:
+
+- Email: darshu@gmail.com
+- Password: Darshu@123
+
 ## Features
 
 - Adoption
